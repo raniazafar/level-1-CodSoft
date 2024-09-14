@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Light Yellow Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #2f2f2f; /* Dark Grey Background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    width: 270px; /* Increased Width */
+}
+
+.display {
+    background-color: #1c1c1c; /* Black Background */
+    color: #ffffff; /* White Text */
+    padding: 20px; /* Adjusted Padding */
+    text-align: right;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.8em; /* Slightly Larger Font Size */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+button {
+    background-color: #5c5c5c; /* Light Grey for Buttons */
+    color: #000000; /* Black Text */
+    border: none;
+    padding: 20px; /* Increased Padding */
+    font-size: 1.5em; /* Larger Font Size */
+    cursor: pointer;
+    border-radius: 0;
+}
+
+button:hover {
+    background-color: #6e6e6e; /* Slightly Lighter Grey on Hover */
+}
+
+button.operator {
+    background-color: #ffffff; /* White for Operators */
+    color: #000000; /* Black Text for Operators */
+}
+
+button.operator:hover {
+    background-color: #f0f0f0; /* Slightly Grey on Hover */
+}
+
+button.equal {
+    background-color: #0d47a1; /* Dark Blue for Equals */
+    color: #ffffff; /* White Text */
+    grid-column: span 4; /* Span across all columns */
+}
+
+button.equal:hover {
+    background-color: #1565c0; /* Darker Blue on Hover */
+}
+
+button.number {
+    background-color: #e0e0e0; /* Light Grey for Numbers */
+    color: #000000; /* Black Text */
+}
+
+button.number:hover {
+    background-color: #f0f0f0; /* Slightly Lighter Grey on Hover */
+}
